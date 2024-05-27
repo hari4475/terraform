@@ -10,3 +10,7 @@ terraform {
 provider "azurerm" {
   features {}
 }
+resource "azurerm_resource_group" "myrg-1" {
+  name = "myrg-1"
+  location = "north-europe"
+}
